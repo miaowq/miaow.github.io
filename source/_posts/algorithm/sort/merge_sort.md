@@ -1,10 +1,11 @@
 ---
 title: 归并排序
-date: 2023-11-15 23:00:05
 categories:
-- 排序算法
+  - 排序算法
 tags:
-- 排序算法
+  - 排序算法
+abbrlink: 1599bffe
+date: 2023-11-15 23:00:05
 ---
 
 > 该系列文章均来自：(https://hunterhug.github.io/goa.c)

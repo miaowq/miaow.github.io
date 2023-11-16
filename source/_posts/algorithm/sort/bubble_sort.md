@@ -1,10 +1,11 @@
 ---
 title: 冒泡排序
-date: 2023-11-15 23:00:01
 categories:
-- 排序算法
+  - 排序算法
 tags:
-- 排序算法
+  - 排序算法
+abbrlink: 14e6f1eb
+date: 2023-11-15 23:00:01
 ---
 
 > 该系列文章均来自：(https://hunterhug.github.io/goa.c)

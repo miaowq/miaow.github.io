@@ -1,10 +1,11 @@
 ---
 title: 插入排序
-date: 2023-11-15 23:00:03
 categories:
-- 排序算法
+  - 排序算法
 tags:
-- 排序算法
+  - 排序算法
+abbrlink: 96555fb2
+date: 2023-11-15 23:00:03
 ---
 
 > 该系列文章均来自：(https://hunterhug.github.io/goa.c)

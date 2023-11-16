@@ -1,10 +1,11 @@
 ---
 title: 快速排序
-date: 2023-11-15 23:00:07
 categories:
-- 排序算法
+  - 排序算法
 tags:
-- 排序算法
+  - 排序算法
+abbrlink: ff8068c0
+date: 2023-11-15 23:00:07
 ---
 
 > 该系列文章均来自：(https://hunterhug.github.io/goa.c)

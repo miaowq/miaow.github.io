@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   gitalk: ^1.8.0
   hexo: ^7.0.0
+  hexo-abbrlink: ^2.2.1
   hexo-deployer-git: ^4.0.0
   hexo-generator-archive: ^2.0.0
   hexo-generator-category: ^2.0.0
@@ -19,10 +20,12 @@ specifiers:
   hexo-theme-landscape: ^1.0.0
   hexo-util: ^3.1.0
   hexo-word-counter: ^0.1.0
+  nunjucks: ^3.2.4
 
 dependencies:
   gitalk: 1.8.0
   hexo: 7.0.0
+  hexo-abbrlink: 2.2.1
   hexo-deployer-git: 4.0.0
   hexo-generator-archive: 2.0.0
   hexo-generator-category: 2.0.0
@@ -39,6 +42,7 @@ dependencies:
   hexo-theme-landscape: 1.0.0
   hexo-util: 3.1.0
   hexo-word-counter: 0.1.0
+  nunjucks: 3.2.4
 
 packages:
 
@@ -160,6 +164,12 @@ packages:
 
   /archy/1.0.0:
     resolution: {integrity: sha512-Xg+9RwCg/0p32teKdGMPTPnVXKD0w3DfHnFTficozsAgsvq2XenPJq/MYpzzQ/v8zrOyJn6Ds39VA4JIDwFfqw==}
+    dev: false
+
+  /argparse/1.0.10:
+    resolution: {integrity: sha512-o5Roy6tNG4SL/FOkCAN6RzjiakZS25RLYFrcMttJqbdd8BWrnA+fGz57iN5Pb06pvBGvl5gQ0B48dJlslXvoTg==}
+    dependencies:
+      sprintf-js: 1.0.3
     dev: false
 
   /argparse/2.0.1:
@@ -1681,6 +1691,13 @@ packages:
       sntp: 0.2.4
     dev: false
 
+  /hexo-abbrlink/2.2.1:
+    resolution: {integrity: sha512-yvazN7bbrIb7p8QU3nJ/8fbDmir1mFroYvUYcJz5xpc6DtszKggschmqZg6WNUdjhDBFyDwksrIUfwQnw0OOuA==}
+    dependencies:
+      hexo-front-matter: 1.0.0
+      hexo-fs: 3.1.0
+    dev: false
+
   /hexo-cli/4.3.1:
     resolution: {integrity: sha512-nYe7yJhXT7MwlDEpIAjneMfz0wnWTdIhRv+cVW2OPTw8JtG2X+8Y/sYhPDvQz/ZqjFRZ4qgiKFXN5orFJ/u1vg==}
     engines: {node: '>=14'}
@@ -1712,6 +1729,13 @@ packages:
       - chokidar
     dev: false
 
+  /hexo-front-matter/1.0.0:
+    resolution: {integrity: sha512-Hn8IIzgWWnxYTekrjnA0rxwWMoQHifyrxKMqVibmFaRKf4AQ2V6Xo13Jiso6CDwYfS+OdA41QS5DG1Y+QXA5gw==}
+    engines: {node: '>=8.6.0'}
+    dependencies:
+      js-yaml: 3.14.1
+    dev: false
+
   /hexo-front-matter/4.2.1:
     resolution: {integrity: sha512-sJJI0GNmejYiwBvgnGRKn5V3sbODB4dNPr8jyw2Qp0PRHr4Uuyv8iyxw6WfK3+T7yvzYvJOh+tZ7jnwr2BYARA==}
     engines: {node: '>=14'}
@@ -1729,6 +1753,16 @@ packages:
       graceful-fs: 4.2.11
     transitivePeerDependencies:
       - supports-color
+    dev: false
+
+  /hexo-fs/3.1.0:
+    resolution: {integrity: sha512-SfoDH7zlU9Iop+bAfEONXezbNIkpVX1QqjNCBYpapilZR+xVOCfTEdlNixanrKBbLGPb2fXqrdDBFgrKuiVGQQ==}
+    engines: {node: '>=10.13.0'}
+    dependencies:
+      bluebird: 3.7.2
+      chokidar: 3.5.3
+      graceful-fs: 4.2.11
+      hexo-util: 2.7.0
     dev: false
 
   /hexo-fs/4.1.1:
@@ -2450,6 +2484,14 @@ packages:
     dependencies:
       esprima: 4.0.1
       js-yaml: 4.1.0
+    dev: false
+
+  /js-yaml/3.14.1:
+    resolution: {integrity: sha512-okMH7OXXJ7YrN9Ok3/SXrnu4iX9yOk+25nqX4imS2npuvTYDmo/QEZoqwZkYaIDk3jVvBOTOIEgEhaLOynBS9g==}
+    hasBin: true
+    dependencies:
+      argparse: 1.0.10
+      esprima: 4.0.1
     dev: false
 
   /js-yaml/4.1.0:
@@ -3636,6 +3678,10 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       extend-shallow: 3.0.2
+    dev: false
+
+  /sprintf-js/1.0.3:
+    resolution: {integrity: sha512-D9cPgkvLlV3t3IzL0D0YLvGA9Ahk4PcvVwUbN0dSGr1aP0Nrt4AEnTUbuGvquEC0mA64Gqt1fzirlRs5ibXx8g==}
     dev: false
 
   /sprintf-js/1.1.3:

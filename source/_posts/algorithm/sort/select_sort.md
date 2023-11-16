@@ -1,10 +1,11 @@
 ---
 title: 选择排序
-date: 2023-11-15 23:00:02
 categories:
-- 排序算法
+  - 排序算法
 tags:
-- 排序算法
+  - 排序算法
+abbrlink: 43d00a99
+date: 2023-11-15 23:00:02
 ---
 
 > 该系列文章均来自：(https://hunterhug.github.io/goa.c)

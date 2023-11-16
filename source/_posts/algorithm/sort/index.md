@@ -1,10 +1,11 @@
 ---
 title: 总览
-date: 2023-11-15 23:00:00
 categories:
-- 排序算法
+  - 排序算法
 tags:
-- 排序算法
+  - 排序算法
+abbrlink: af9e8011
+date: 2023-11-15 23:00:00
 ---
 
 > 该系列文章均来自：(https://hunterhug.github.io/goa.c)
