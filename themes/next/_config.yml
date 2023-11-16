@@ -410,10 +410,10 @@ gitment:
   language: # Force language, or auto switch by theme
   github_user: miaowq  # MUST HAVE, Your Github ID
   github_repo: miaowq.github.io  # MUST HAVE, The repo you use to store Gitment comments
-  client_id: 6038ba03a64ab202a6b9 # MUST HAVE, Github client id for the Gitment
-  client_secret: aa0e6fff88976c3ecba28ffd438bfee14e7cc220 # EITHER this or proxy_gateway, Github access secret token for the Gitment
+  client_id: f7a9ef373554f44c07b0 # MUST HAVE, Github client id for the Gitment
+  client_secret: fb61b2c2fabe5100adb3302e7d560b6be361a6a4 # EITHER this or proxy_gateway, Github access secret token for the Gitment
   proxy_gateway: # Address of api proxy, See: https://github.com/aimingoo/intersect
-  redirect_protocol: # Protocol of redirect_uri with force_redirect_protocol when mint enabled
+  redirect_protocol: https://miaowq.github.io # Protocol of redirect_uri with force_redirect_protocol when mint enabled
 
 # Baidu Share
 # Available value:
