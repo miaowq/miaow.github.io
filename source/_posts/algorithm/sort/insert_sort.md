@@ -8,7 +8,7 @@ abbrlink: 96555fb2
 date: 2023-11-15 23:00:03
 ---
 
-> 该系列文章均来自：(https://hunterhug.github.io/goa.c)
+> 该系列文章均来自：https://hunterhug.github.io/goa.c
 > 示例代码为：Golang
 
 ## 前言｜算法介绍
