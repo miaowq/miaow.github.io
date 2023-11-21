@@ -298,11 +298,11 @@ func openLock(deadends []string, target string) int {
 		newQueue := map[string]bool{}
 
 		for cur, _ := range beginQeueu {
-			if endQueue[cur] == true {
+			if endQueue[cur] {
 				return step
 			}
 
-			if visited[cur] == true {
+			if visited[cur] {
 				continue
 			}
 
