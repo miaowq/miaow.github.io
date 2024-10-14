@@ -278,7 +278,7 @@ DFS 不能找最短路径吗？
 ```Golang
 func openLock(deadends []string, target string) int {
 	visited := map[string]bool{}
-	beginQeueu := map[string]bool{
+	beginQueue := map[string]bool{
 		"0000": true,
 	}
 	endQueue := map[string]bool{
@@ -290,14 +290,14 @@ func openLock(deadends []string, target string) int {
 		visited[s] = true
 	}
 
-	for len(beginQeueu) > 0 && len(endQueue) > 0 {
-		if len(beginQeueu) > len(endQueue) {
-			beginQeueu, endQueue = endQueue, beginQeueu
+	for len(beginQueue) > 0 && len(endQueue) > 0 {
+		if len(beginQueue) > len(endQueue) {
+			beginQueue, endQueue = endQueue, beginQueue
 		}
 
 		newQueue := map[string]bool{}
 
-		for cur, _ := range beginQeueu {
+		for cur, _ := range beginQueue {
 			if endQueue[cur] {
 				return step
 			}
@@ -324,7 +324,7 @@ func openLock(deadends []string, target string) int {
 		}
 
 		step++
-		beginQeueu = newQueue
+		beginQueue = newQueue
 	}
 
 	return -1
@@ -335,4 +335,4 @@ func openLock(deadends []string, target string) int {
 
 ![](/images/algorithm/bfs/bfs2.png)
 
-也就是代码中`if len(beginQeueu) > len(endQueue) {...}`交换来体现这个交集，这算是一个优化：因为按照 BFS 的逻辑，队列（集合）中的元素越多，扩散之后新的队列（集合）中的元素就越多；在双向 BFS 算法中，如果我们每次都选择一个较小的集合进行扩散，那么占用的空间增长速度就会慢一些，效率就会高一些。
+也就是代码中`if len(beginQueue) > len(endQueue) {...}`交换来体现这个交集，这算是一个优化：因为按照 BFS 的逻辑，队列（集合）中的元素越多，扩散之后新的队列（集合）中的元素就越多；在双向 BFS 算法中，如果我们每次都选择一个较小的集合进行扩散，那么占用的空间增长速度就会慢一些，效率就会高一些。
